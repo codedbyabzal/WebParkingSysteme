@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  width: 200px;
+  height: 100vh;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.sidebar nav ul li a.active {
+  color: #ff5252;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown ul li a:hover {
+  background-color: #f5f5f5;
+}
+
+.profile:hover .dropdown {
+  display: block;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-parking-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-parking-btn:hover {
+  background-color: #0056b3;
+}
+
+.parking-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.parking-info h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.parking-info p {
+  font-size: 14px;
+  color: #666;
+}
+
+.available-spots {
+  font-size: 20px;
+  font-weight: bold;
+  color: #29b6f6;
+}
+
+.price-tag {
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+}
+
+.delete-btn, .edit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn {
+  background-color: #ff5252;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+/* Button and anchor styling */
+.actions a.edit-btn {
+background-color: #007bff;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+display: inline-block;
+cursor: pointer;
+}
+
+.actions a.edit-btn:hover {
+background-color: #0056b3;
+}
+
+.delete-btn {
+background-color: #ff5252;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.delete-btn:hover {
+background-color: #e53935;
+}
+
+/* Add your additional styles for layout, search bar, etc. */
+.profile {
+position: relative;
+display: inline-block;
+}
+
+.profile .dropdown {
+display: none;
+position: absolute;
+top: 50px; /* Adjust this value so it positions correctly */
+right: 0;
+background-color: white;
+min-width: 160px;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+z-index: 1;
+border-radius: 5px;
+}
+
+.profile:hover .dropdown {
+display: block;
+}
+
+.dropdown ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.dropdown ul li {
+padding: 12px 16px;
+}
+
+.dropdown ul li a {
+color: black;
+text-decoration: none;
+display: block;
+}
+
+.dropdown ul li a:hover {
+background-color: #f1f1f1;
+}

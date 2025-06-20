@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Parking Lots</title>
+  <link rel="stylesheet" href="par.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+  <!-- Your custom JS file -->
+  <script src="par.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="My parking.html" class="active">My Parking Lots</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <header>
+        <div class="search">
+          <input type="text" id="search-input" placeholder="Search">
+          <select id="city-select">
+            <option value="">Select City</option>
+            <option value="Skopje">Skopje</option>
+            <option value="Bitola">Bitola</option>
+            <option value="Ohrid">Ohrid</option>
+            <option value="Tetovo">Tetovo</option>
+          </select>
+        </div>
+        <div class="profile">
+          <img src="image.png" alt="User Avatar" class="avatar">
+          <span>adarshathondar001110gmail.com</span>
+          <div class="dropdown">
+            <ul>
+              <li><a href="My profile.html">My Profile</a></li>
+              <li><a href="index.html">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section class="parking-list">
+        <div class="section-header">
+          <h2>My Parking Lots</h2>
+          <a href="Add.html" class="add-parking-btn">Add parking lot</a>
+        </div>
+
+        <div class="parking-card">
+          <div class="parking-info">
+            <span class="available-spots">9 out of 10</span> <!-- This will be updated dynamically -->
+            <h3>Parking Lot 1 <span class="price-tag">60den/hr</span></h3>
+            <p class="location">GITAM UNIVERSITY</p>
+            <p class="time"><i class="fa fa-clock-o"></i> 06:00-00:00</p>
+          </div>
+          <div class="actions">
+            <button class="delete-btn">Delete</button>
+            <a href="edit.html" class="edit-btn">Edit</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.app-name {
+    font-size: 24px;
+    color: #000;
+}
+
+.login-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.mobile-frame {
+    position: relative;
+    width: 400px; /* Adjust width to fit mobile mockup */
+    height: 650px; /* Adjust height to fit mobile mockup */
+    background-image: url('mg.png'); /* Replace with your mobile mockup image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 40px; /* Adjust space between the mobile and desktop forms */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 58%; /* Adjust width to fit the form better inside mobile mockup */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    position: absolute;
+    left: 148px; /* Slightly move the form to the left */
+    top: 120px; /* Adjust top positioning to center the form vertically */
+}
+
+.sign-in-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.sign-in-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.sign-in-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sign-in-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.sign-in-container .forgot-password {
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.sign-in-container .sign-in-btn, .sign-in-container .google-sign-in-btn {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.sign-in-container .google-sign-in-btn {
+    background-color: #4285F4;
+}
+
+.sign-in-container .or {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.desktop-login-form {
+    width: 50%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.desktop-login-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.desktop-login-form p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.desktop-login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop-login-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.desktop-login-form .login-btn {
+    background-color: #e50914;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.desktop-login-form .sign-up-link {
+    color: #e50914;
+    text-decoration: none;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .login-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-frame {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 280px; /* Adjust width for smaller screens */
+        height: 550px; /* Adjust height for smaller screens */
+    }
+
+    .desktop-login-form {
+        width: 100%;
+        padding: 20px;
+    }
+}

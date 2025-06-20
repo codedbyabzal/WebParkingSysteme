@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="My parking.html" class="active">Parking Lots</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <header>
+        <div class="search">
+          <input type="text" placeholder="Search">
+          <select>
+            <option value="">City</option>
+            <option value="Skopje">Skopje</option>
+            <option value="Bitola">Bitola</option>
+            <option value="Ohrid">Ohrid</option>
+            <option value="Tetovo">Tetovo</option>
+          </select>
+        </div>
+        <div class="profile">
+          <img src="image.png" alt="User Avatar" class="avatar">
+          
+          <span>adarshathondar001110gmail.com</span>
+          <div class="dropdown">
+            <ul>
+              <li><a href="My profile.html">My Profile</a></li>
+              <li><a href="index.html">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section class="profile-section">
+        <div class="profile-image">
+          <img src="pr.png" alt="Profile Image" class="profile-pic">
+          <button class="upload-btn">Upload new image</button>
+        </div>
+
+        <div class="profile-details">
+          <form id="profileForm">
+            <div class="form-row">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="First Name">
+            </div>
+            <div class="form-row">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Last Name">
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone number</label>
+              <input type="text" id="phone" placeholder="Phone number">
+            </div>
+            <div class="form-row">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-row">
+              <label for="confirmPassword">Confirm Password</label>
+              <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="save-btn">Save Changes</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>
